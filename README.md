@@ -1,2 +1,7 @@
-# Bank-Account-System
-A Bank Account System project in Java with Deposit, Withdraw and Transfer operations.
+## A Bank Account System project in Java with the following features:
+
+Classes & Constructors practice
+
+Deposit, Withdraw, Transfer operations
+
+Exception Handling for invalid operations
