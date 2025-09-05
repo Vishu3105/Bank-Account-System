@@ -19,6 +19,11 @@ class BankAccount {
         balance += amount;
         System.out.println(amount + " deposited successfully into " + accountHolder + "'s account.");
     }
+
+    // Display balance
+    public void displayBalance() {
+        System.out.println("Account Holder: " + accountHolder + ", Account Number: " + accountNumber + ", Balance: " + balance);
+    }
 }
 public class Main {
     public static void main(String[] args) {
