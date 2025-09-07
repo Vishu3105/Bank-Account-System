@@ -54,6 +54,18 @@ class BankAccount {
 }
 public class Main {
     public static void main(String[] args) {
+        // Create accounts
+        BankAccount acc1 = new BankAccount("vishu", 101, 1000);
+        BankAccount acc2 = new BankAccount("vikas", 102, 500);
+
+        // Show initial balances
+        acc1.displayBalance();
+        acc2.displayBalance();
+
+        System.out.println("----- Transactions -----");
+
+        // Deposit
+        acc1.deposit(200);
 
     }
 }
