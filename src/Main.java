@@ -67,5 +67,24 @@ public class Main {
         // Deposit
         acc1.deposit(200);
 
+        // Withdraw
+        try {
+            acc1.withdraw(500);
+        } catch (InsufficientFundsException e) {
+            System.out.println(e.getMessage());
+        }
+
+        // Transfer
+        try {
+            acc1.transfer(acc2, 300);
+        } catch (InsufficientFundsException e) {
+            System.out.println(e.getMessage());
+        }
+
+        // Final balances
+        System.out.println("----- Final Balances -----");
+        acc1.displayBalance();
+        acc2.displayBalance();
     }
 }
+
